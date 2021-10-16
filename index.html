@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <script src="main.js" defer></script>
+    <title>Countdown-Timer</title>
+</head>
+
+<body class="dark-theme">
+    
+    <div class="container">
+        
+        <div id="main" class="hint-bg">
+            <div id="size-slider" class="size-slider hidden">
+                <input type="text" id="size" class="size" value="10">
+                <input type="range" min="0" max="50" step="1" value="10" id="slider" class="slider verticl-style">
+            </div>
+            <div id="canvas-bg" class="canvas-bg"></div>
+        </div>
+
+        <div id="btn-toolbox" class="btn-hint pos-bottom">
+            <i class="fas fa-toolbox"></i>
+        </div>
+
+        <div id="toolbox" class="toolbox">
+            <div class="hide-wrap">
+                <div id="canvas-panel" class="canvas-panel">
+                    <div class="block-wrap scrollerbar-style1">
+
+                    </div>
+                    <input type="range" id="opacity-slider" min="0" max="100" step="1" value="100"
+                        class="slider full-style">
+                </div>
+                
+            </div>
+            <div class="tools-wrap">
+                <div class="sub-wrap">
+                    <div class="subtitle">
+                        新增 & 刪除
+                    </div>
+                    <div class="row">
+                        <div id="add" class="btn-base">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div id="remove" class="btn-base">
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-wrap">
+                    <div class="subtitle">
+                        筆刷 & 橡皮擦
+                    </div>
+                    <div class="row">
+
+                        <div id="brush-size" class="btn-base">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <div id="eraser" class="btn-base">
+                            <i class="fas fa-eraser"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-wrap">
+                    <div class="subtitle">
+                        調色盤
+                    </div>
+                    <div class="row">
+
+                        <div id="color1" class="btn-color selected">
+
+                        </div>
+                        <div id="color2" class="btn-color">
+
+                        </div>
+                        <div id="color3" class="btn-color">
+
+                        </div>
+                        <input type="color" value="#de2020" id="palette" class="btn-palette">
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" download="canvas.png" id="save" class="btn-save">save image</a>
+            <div id="close" class="btn-hint">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/410059cd62.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
