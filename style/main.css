@@ -12,7 +12,7 @@
 /* 定位-底 */
 .pos-bottom{
     position: absolute;
-    bottom: 0;
+    bottom: 2rem;
     left: 0;
     right: 0;
 }
@@ -61,7 +61,7 @@ body{
 /* 畫布容器 */
 .hint-bg{
     width: 90%;
-    min-height: 90vh;
+    min-height: 80vh;
     margin: auto;
     color: var(--hint-ft-color);
     position: relative;
@@ -247,13 +247,6 @@ canvas{
     font-size: 16px;
 }
 
-
-.verticl-style{
-    margin: 30px 0 0;
-    transform-origin: 20px 0px;
-    transform: rotate(90deg);
-}
-
 .slider:active{
     opacity: 1;
 }
@@ -265,6 +258,11 @@ canvas{
     cursor: pointer;
     width: 15px;
     height: 15px;
+}
+.verticl-style{
+    margin: 30px 0 0;
+    transform-origin: 20px 0px;
+    transform: rotate(90deg);
 }
 
 /* 圖層設定 */
