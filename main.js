@@ -171,7 +171,7 @@ function mouseDrawing(canvasEl, ctx, event_param) {
 }
 //
 function touchDrawing(canvasEl, ctx, event_param) {
-    window.addEventListener('touchstart',function(ev){
+    document.addEventListener('touchstart',function(ev){
         ev.preventDefault();
     },{passive:false})
     canvasEl.addEventListener(event_param + 'start', function (ev) {
