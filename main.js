@@ -171,7 +171,9 @@ function mouseDrawing(canvasEl, ctx, event_param) {
 }
 //
 function touchDrawing(canvasEl, ctx, event_param) {
-
+    window.addEventListener('touchstart',function(ev){
+        ev.preventDefault();
+    },{passive:false})
     canvasEl.addEventListener(event_param + 'start', function (ev) {
         mouse.isPress = true;
         mouse.x = ev.touches[0].clientX - mainEl.offsetLeft;
