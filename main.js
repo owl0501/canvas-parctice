@@ -171,6 +171,7 @@ function mouseDrawing(canvasEl, ctx, event_param) {
 }
 //
 function touchDrawing(canvasEl, ctx, event_param) {
+    //防止視窗滑動
     document.addEventListener('touchstart',function(ev){
         ev.preventDefault();
     },{passive:false})
