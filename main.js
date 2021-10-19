@@ -183,6 +183,7 @@ function touchDrawing(canvasEl, ctx, event_param) {
     });
 
     canvasEl.addEventListener(event_param + 'move', function (ev) {
+        ev.preventDefualt();
         mouse.x = ev.touches[0].clientX - mainEl.offsetLeft;
         mouse.y = ev.touches[0].clientY - mainEl.offsetTop;
         drawCircle(ctx, size);
@@ -192,7 +193,7 @@ function touchDrawing(canvasEl, ctx, event_param) {
         drawLine(ctx, x1, y1, x2, y2);
         x1 = x2;
         y1 = y2;
-    });
+    },{passive:false});
     canvasEl.addEventListener(event_param + 'end', function (ev) {
         mouse.isPress = false;
     });
